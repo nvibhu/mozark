@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 
 import getParser
 
-def getMasterMY(file_dir, country_code, last_date):
+def getMasterSGP(file_dir, country_code, last_date):
 
     print(f' [INFO] [{country_code}]: Getting files from dir - {getParser.getOpeningTBFile(file_dir, country_code)}')
 

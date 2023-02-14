@@ -4,71 +4,63 @@ from datetime import datetime, timedelta
 
 import getParser
 
-def getMasterMY(file_dir, country_code, last_date):
+def getMasterPH(file_dir, country_code, last_date):
 
     print(f' [INFO] [{country_code}]: Getting files from dir - {getParser.getOpeningTBFile(file_dir, country_code)}')
 
     df_opening_balance = pd.read_csv(getParser.getOpeningTBFile(file_dir, country_code), encoding = 'latin1')
     #df_opening_balance['Date'] =  pd.to_datetime(df_opening_balance['Date']) #format='%d%b%Y:%H:%M:%S.%f'
     #df_opening_balance['Date'] =  pd.to_datetime(df_opening_balance['Date'], format='%d/%m/%y')
-    df_opening_balance['Opening_Debit'] = df_opening_balance['Opening_Debit'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','')
-    df_opening_balance['Opening_Credit'] = df_opening_balance['Opening_Credit'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','')
-    df_opening_balance['Account No'] = df_opening_balance['Account No'].str.replace("'",'')
+    df_opening_balance['Opening_Debit'] = df_opening_balance['Opening_Debit'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','').str.replace(' ','0').str.replace('-','0')
+    df_opening_balance['Opening_Credit'] = df_opening_balance['Opening_Credit'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','').str.replace(' ','0').str.replace('-','0')
     df_opening_balance['Opening_Debit'] = df_opening_balance['Opening_Debit'].astype(float)
     df_opening_balance['Opening_Credit'] = df_opening_balance['Opening_Credit'].astype(float)
     df_opening_balance['Account No'] = df_opening_balance['Account No'].astype(str)
+    df_opening_balance['RC Code'] = df_opening_balance['RC Code'].fillna('NA')
     df_opening_balance.head()
 
-    def account_no_parser(account_no):
-        account_no_str = ''
-        if account_no == account_no:
-            account_no_str = str(account_no)
-            account_no_str = "{}-{}".format(account_no_str.split('.')[0][0], account_no_str.split('.')[0][1:])
-        else:
-            account_no_str = account_no
-        return account_no_str
 
-    df_transaction = pd.read_csv(getParser.getGLFile(file_dir, country_code), encoding = 'latin1')
-    df_transaction.rename(columns = {'DOC DATE':'Date', 'DOC NO':'Doc No', 'Memo':'Particulars', 'RC CODE':'RC Code',
+    df_transaction = pd.read_csv(getParser.getGLFile(file_dir, country_code), skiprows = 10, encoding = 'latin1')
+    df_transaction.rename(columns = {'DOC DATE':'Date', 'DOC NO':'Doc No', 'PARTICULARS':'Particulars', 'RC CODE':'RC Code',
                                     'ACCT CODE':'Account No', 'DEBIT':'Debit Amount', 
                                     'CREDIT':'Credit Amount'}, inplace = True)
-    #df_transaction['Date'] =  pd.to_datetime(df_transaction['Date']) #format='%d%b%Y:%H:%M:%S.%f'
-    df_transaction['Date'] =  pd.to_datetime(df_transaction['Date'], format='%d-%m-%Y')
-    df_transaction['Debit Amount'] = df_transaction['Debit Amount'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','')
-    df_transaction['Credit Amount'] = df_transaction['Credit Amount'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','')
-    #df_tb['amount'] = pd.to_numeric(df_tb['amount'], errors='coerce').astype('Float64')
-    df_transaction['Exchange Rate'] = df_transaction['Exchange Rate'].astype(float)
-    df_transaction['Debit Amount'] = df_transaction['Debit Amount'].astype(float) * df_transaction['Exchange Rate']
-    df_transaction['Credit Amount'] = df_transaction['Credit Amount'].astype(float) * df_transaction['Exchange Rate']
-    df_transaction['Account No'] = df_transaction.apply(lambda x: account_no_parser(x['Account Number']), axis=1)
+    df_transaction.dropna(subset=['Date'], inplace=True)
+    df_transaction['Date'] =  pd.to_datetime(df_transaction['Date'], format='%m/%d/%Y')
+    df_transaction = df_transaction[~df_transaction['Particulars'].isin(['Beginning Balance'])]
+
+    df_transaction['Debit Amount'] = df_transaction['Debit Amount'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','').str.replace(' ','0').str.replace('-','0')
+    df_transaction['Credit Amount'] = df_transaction['Credit Amount'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','').str.replace(' ','0').str.replace('-','0')
+    df_transaction['Debit Amount'] = df_transaction['Debit Amount'].astype(float)
+    df_transaction['Credit Amount'] = df_transaction['Credit Amount'].astype(float)
+    df_transaction['Account No'] = df_transaction['Account No'].astype(str)
+    df_transaction['RC Code'] = df_transaction['RC Code'].fillna('NA')
     df_transaction.head()
 
-
-
-    df_opening_balance_groupby = df_opening_balance.groupby('Account No')
+    df_opening_balance_groupby = df_opening_balance.groupby(['Account No', 'RC Code'])
     date_time = last_date
-    date_time = pd.to_datetime(date_time)
+    #date_time = pd.to_datetime(date_time)
     flag = ''
 
     columns_ = df_opening_balance.columns.tolist()
-    columns_.append('Journal Number')
-    columns_.append('Job')
+    #columns_.append('RC Code')
+    columns_.append('Doc No')
 
     # iterate over each group
     list_final = []
     for group_name, df_opening_balance_ in df_opening_balance_groupby:
+        #print(group_name[0],group_name[1],group_name)
         flag = df_opening_balance_['BS Classifications'].iloc[0]
         #print(flag)
         #if(group_name == '1-2120'):
         #print('Grouping for - '+group_name)
         #print(df_opening_balance.iloc[0].tolist())
-        df_transaction_filtered = df_transaction[df_transaction['Account No'].isin([group_name])]
+        df_transaction_filtered = df_transaction[df_transaction['Account No'].isin([group_name[0]]) & df_transaction['RC Code'].isin([group_name[1]])]
         #df_global_tb_filtered = df_global_tb[df_global_tb['Grouping'].str.contains(group_name, case=False, na=False)]
         #print(df_global_tb_filtered)
         list_group = []
         list_temp = df_opening_balance_.iloc[0].tolist()
         list_temp.append(np.nan)
-        list_temp.append(np.nan)
+        #list_temp.append(np.nan)
         list_group.append(list_temp)
         if len(df_transaction_filtered) > 0:
             #print(df_opening_balance.iloc[0].tolist())
@@ -78,9 +70,11 @@ def getMasterMY(file_dir, country_code, last_date):
                 list_temp_[3] = row['Particulars']
                 list_temp_[4] = row['Debit Amount']
                 list_temp_[5] = row['Credit Amount']
-                list_temp_.append(row['Journal Number'])
-                list_temp_.append(row['Job'])
+                list_temp_[len(list_temp_)-1] = row['RC Code']
+                #list_temp_.append(row['RC Code'])
+                list_temp_.append(row['Doc No'])
                 list_group.append(list_temp_)
+                
         list_temp = df_opening_balance_.iloc[0].tolist()
         list_temp[0] = date_time
         list_temp[3] = 'Closing Balance'
@@ -129,9 +123,7 @@ def getMasterMY(file_dir, country_code, last_date):
     #df_final['Date'] =  pd.to_datetime(df_final['Date'], format='%d%m%Y:%H:%M:%S.%f')
 
     df_customer = pd.read_csv(getParser.getCustomerFile(file_dir, country_code), encoding = 'latin1')
-    df_merged = pd.merge(df_final, df_customer, how='left', left_on=['Job'], right_on=['Job'])
+    df_merged = pd.merge(df_final, df_customer, how='left', left_on=['RC Code'], right_on=['RC Code'])
     df_merged.to_csv(getParser.getMasterFile(file_dir, country_code), mode='w', sep=',', encoding='utf-8', index=False)
-    df_merged.head(10)
+    df_merged.head()
 
-
-        
