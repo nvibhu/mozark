@@ -1,0 +1,63 @@
+Date,Account No,Account,Particulars,Opening_Debit,Opening_Credit,New ID,COA Mapping,BS Classifications,Grouping,Sub_Grouping,Grouping_1,Sub_Grouping_1
+01/04/22,1-1110,Computer Equip,Opening Balance,"3,944",,1600-10010,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Fixed Assets - Tangible,Fixed Assets - Tangible,Fixed Assets - Tangible
+01/04/22,1-1120,Computer Equip - Accum. Depn,Opening Balance,,,1610-10010,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Acc_Dep,Fixed Assets - Tangible,Acc_Dep
+01/04/22,1-2110,Bank- EON MYR,Opening Balance,"3,138",,1100-10000,Cash & Cash Equivalents,CA,Cash & Cash Equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,1-2120,HSBC RM A/C,Opening Balance,"26,510",,1100-10000,Cash & Cash Equivalents,CA,Cash & Cash Equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,1-2330,WIP - Material,Opening Balance,,,1400-10080,Inventory,CA,Inventory,Inventory,Inventory,Inventory
+01/04/22,1-2340,WIP - Sub Contractor,Opening Balance,,,1400-10080,Inventory,CA,Inventory,Inventory,Inventory,Inventory
+01/04/22,1-2610,Trade Debtors,Opening Balance,"3,89,963",,1300-10000,Trade and other receivables,CA,Trade and other receivables,Trade and other receivables,Trade and other receivables,Trade and other receivables
+01/04/22,1-2651,Security Deposits,Opening Balance,"2,100",,1410-10010,Deposits,CA,Deposits,Deposits-Customer,Deposits,Deposits-Customer
+01/04/22,1-2670,Unbilled Revenue,Opening Balance,"50,11,851",,1310-10000,UnBilled Revenue,CA,UnBilled Revenue,UnBilled Revenue,UnBilled Revenue,UnBilled Revenue
+01/04/22,1-2810,Amount due from/(to) AFL,Opening Balance,,"2,37,023",2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,1-2811,Amount due from/(to) AFL Exchg,Opening Balance,,"4,95,282",2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,1-2812,Amount due from/(to) AFL NT,Opening Balance,,"13,45,466",2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,1-2813,Amount due from/(to) AFL NT Ex,Opening Balance,,"28,11,486",2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,1-2840,Mozark PTE Ltd (SG),Opening Balance,,"2,23,185",2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,1-2850,PTVAS India,Opening Balance,,,2300-10010,Inter_Company Payables,CL,Inter_Company Payables,Inter-Company [Singapore-Phil],Inter_Company Payables,Inter-Company [Singapore-Phil]
+01/04/22,2-2200,Trade Creditors,Opening Balance,,"84,352",2100-10000,Trade and other payables,CL,Trade and other payables,Trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,2-2205,Trade Creditors SGD,Opening Balance,,,2100-10000,Trade and other payables,CL,Trade and other payables,Trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,2-2206,Trade Creditors SGD Exchange,Opening Balance,,,2100-10000,Trade and other payables,CL,Trade and other payables,Trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,2-2230,Other Payables,Opening Balance,,474,2100-10000,Trade and other payables,CL,Trade and other payables,Trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,2-2240,Payable to Directors,Opening Balance,,"38,199",2100-10000,Trade and other payables,CL,Trade and other payables,Trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,2-2410,Payroll Deductions Payable,Opening Balance,,,2120-10050,Personnel Payable,CL,Personnel Payable,Employee_Reimbursement_Payable,Accrued Expenses,Employee_Reimbursement_Payable
+01/04/22,2-2430,KWSP (EPF) Payable,Opening Balance,,"3,559",2110-10000,Statutory obligations,CL,Statutory obligations,GST Paid,Statutory obligations,GST Paid
+01/04/22,2-2440,SOCSO Payable,Opening Balance,,233,2110-10000,Statutory obligations,CL,Statutory obligations,GST Paid,Statutory obligations,GST Paid
+01/04/22,2-2450,ESI Payable,Opening Balance,,41,2110-10000,Statutory obligations,CL,Statutory obligations,GST Paid,Statutory obligations,GST Paid
+01/04/22,2-2720,Accrued Audit & Tax Agent Fees,Opening Balance,,"4,600",2100-10020,Accrued Expenses,CL,Accrued Expenses,Other Accruals,Accrued Expenses,Other Accruals
+01/04/22,2-2730,Revenue to be recognised,Opening Balance,,"10,06,077",1310-10000,UnBilled Revenue,CA,UnBilled Revenue,UnBilled Revenue,UnBilled Revenue,UnBilled Revenue
+01/04/22,2-2740,Other Accruals,Opening Balance,,"8,976",2100-10020,Accrued Expenses,CL,Accrued Expenses,Other Accruals,Accrued Expenses,Other Accruals
+01/04/22,2-2741,Accruals - Secretarial Fees,Opening Balance,,300,2100-10020,Accrued Expenses,CL,Accrued Expenses,Other Accruals,Accrued Expenses,Other Accruals
+01/04/22,2-2750,Accrued Cost of Sales,Opening Balance,,"33,50,028",2100-10020,Accrued Expenses,CL,Accrued Expenses,Other Accruals,Accrued Expenses,Other Accruals
+01/04/22,3-3200,Issued Capital,Opening Balance,,"2,50,000",3000-10000,Share Capital,E,Share Capital,Share Capital (ordinary),Share Capital,Share Capital (ordinary)
+01/04/22,3-8000,Retained Earnings,Opening Balance,"44,21,775",,3100-10000,Opening Equity,E,Opening Equity,Accumulated Profit/(Loss) B/f,Opening Equity,Accumulated Profit/(Loss) B/f
+01/04/22,4-1200,Contract Revenue IBC,Opening Balance,,,4100-10000,Revenue,PL,Revenue,Revenue,Revenue,Revenue
+01/04/22,4-1600,Other Sales,Opening Balance,,,4100-10000,Revenue,PL,Revenue,Revenue,Revenue,Revenue
+01/04/22,4-1700,Other Income,Opening Balance,,,4300-10000,Other Income,PL,Other Income,Other Income,Other Income,
+01/04/22,4-9999,Currency Gain/(Loss),Opening Balance,,,5600-10240,Finance Cost,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,5-1200,Material - IBC,Opening Balance,,,5200-10000,Cost of Sales,PL,Cost of Sales,Materials,Cost of Sales,Materials
+01/04/22,5-1500,Subcon - IBC,Opening Balance,,,5100-10020,Cost of Sales,PL,Cost of Sales,Labour,Cost of Sales,Labour
+01/04/22,6-1104,Entertainment,Opening Balance,,,5400-10000,Other Expenses,PL,Other Expenses,Other Operating Expenses,Other Expenses,Other Operating Expenses
+01/04/22,6-1206,Property & Gen Insurance - IBC,Opening Balance,,,,Other Expenses,,,,,
+01/04/22,6-1215,Miscellaneous Expenses - IBC,Opening Balance,,,5600-10270,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-1219,Storage WH - Rental,Opening Balance,,,5300-10000,Other Expenses,PL,Other Expenses,Other Operating Expenses,Other Expenses,Other Operating Expenses
+01/04/22,6-1301,Salaries & Wages - IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1305,Social Security Cont EPF-IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1306,Social Security Cont SOCSO-IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1308,Staff Insurance - IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1313,Overtime Meal Allowance - IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1315,EIS Contribution - IBC,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-1316,Staff Insurance - SGP Support,Opening Balance,,,5200-10020,Direct Compensation,PL,Direct Compensation,Direct Salaries,Direct Compensation,Direct Salaries
+01/04/22,6-9202,Equipment Rental- G&A Expenses,Opening Balance,,,5600-10040,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9205,Mobile Usage - G&A Expenses,Opening Balance,,,5600-10090,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9208,Office Supplies - G&A Expenses,Opening Balance,,,5600-10170,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9210,Postage & Courier - G&A Exp,Opening Balance,,,5600-10190,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9213,Bank Charges - G&A Expenses,Opening Balance,,,5600-10220,Finance Cost,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9301,Salaries & Wages- G&A Expenses,Opening Balance,,,5500-10000,Indirect Compensation,PL,Indirect Salaries,Employee Benefit,Indirect Salaries,Employee Benefit
+01/04/22,6-9304,Medical - G&A Expenses,Opening Balance,,,5300-10000,Other Expenses,PL,Other Expenses,Other Operating Expenses,Other Expenses,Other Operating Expenses
+01/04/22,6-9309,Training Cost - G&A Expenses,Opening Balance,,,5600-10010,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9312,Local Travel - G&A Expenses,Opening Balance,,,5300-10000,Other Expenses,PL,Other Expenses,Other Operating Expenses,Other Expenses,Other Operating Expenses
+01/04/22,6-9401,Management Fees - G&A Expenses,Opening Balance,,,5300-10000,Other Expenses,PL,Other Expenses,Other Operating Expenses,Other Expenses,Other Operating Expenses
+01/04/22,6-9403,Other professional fees - G&A,Opening Balance,,,5600-10120,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,6-9404,Audit fee,Opening Balance,,,5600-10130,Other Expenses,PL,Other Expenses,Administrative Expenses,Other Expenses,Administrative Expenses
+01/04/22,8-5000,Forex Gain / Loss Unrealised,Opening Balance,,,5600-10260,Finance Cost,PL,Other Expenses,Administrative Expenses - Forex,Other Expenses,Administrative Expenses - Forex
+01/04/22,8-9409,Shared Service Support - SGP,Opening Balance,,,5500-10000,Indirect Compensation,PL,Indirect Salaries,Employee Benefit,Indirect Salaries,Employee Benefit

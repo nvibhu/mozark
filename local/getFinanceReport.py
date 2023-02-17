@@ -17,6 +17,7 @@ from getMasterSGP import getMasterSGP
 from getMasterFR import getMasterFR
 from getMasterPH import getMasterPH
 from getMasterIN import getMasterIN
+from getMasterAll import getMasterAll
 
 if __name__ == '__main__':
     print ("[INFO]: Mozark Financial Report")
@@ -34,6 +35,7 @@ if __name__ == '__main__':
     master_fr = getMasterFR(file_dir, 'FR', last_date)
     master_ph = getMasterPH(file_dir, 'PH', last_date)
     master_in = getMasterIN(file_dir, 'IN', last_date)
+    master_all = getMasterAll(file_dir)
 
 
     # # Apply parallel processing for all the files

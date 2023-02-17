@@ -1,0 +1,183 @@
+Date,Account No,Account,Particulars,Opening_Debit,Opening_Credit,New ID,COA Mapping,BS Classifications,Grouping,Sub_Grouping,Grouping_1,Sub_Grouping_1
+01/04/22,10130000,"Capital souscrit-appelé, versé",Opening Balance,,"2,49,300",3000-10000,share capital,E,share capital,share capital (ordinary),Share Capital,Share Capital (ordinary)
+01/04/22,10610000,Réserve légale,Opening Balance,,"24,930",3100-10000,retained earnings,E,opening equity,accumulated profit/(loss) b/f,Opening Equity,Accumulated Profit/(Loss) B/f
+01/04/22,10680000,Autres réserves,Opening Balance,,"1,000",3100-10000,retained earnings,E,opening equity,accumulated profit/(loss) b/f,Opening Equity,Accumulated Profit/(Loss) B/f
+01/04/22,11000000,Report à nouveau (solde créditeur),Opening Balance,,"6,03,688",3100-10000,retained earnings,E,opening equity,accumulated profit/(loss) b/f,Opening Equity,Accumulated Profit/(Loss) B/f
+01/04/22,12000000,Bénéfice,Opening Balance,,"5,004",3100-10000,retained earnings,E,opening equity,accumulated profit/(loss) b/f,Opening Equity,Accumulated Profit/(Loss) B/f
+01/04/22,16411000,Emprunt n°1 PGE 700 K€,Opening Balance,,"7,00,000",2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,16412000,Emprunt n°2 PPR 350 K€,Opening Balance,,"3,50,000",2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,16471000,Emprunt n°1 SG 150 K€,Opening Balance,,"1,50,000",2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,20500000,Concessions et droits similaires,Opening Balance,"10,86,422",,1650-10000,Fixed Assets - Intangible,NCA,Fixed Assets - Intangible,Intangible_Gross,Fixed Assets - Intangible,Intangible_Gross
+01/04/22,20700000,Fonds commercial,Opening Balance,1,,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Gross Block,Fixed Assets - Tangible,Gross Block
+01/04/22,21810000,"Instal.gales, agenct, aménagt.div.",Opening Balance,"5,486",,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Gross Block,Fixed Assets - Tangible,Gross Block
+01/04/22,21820000,Matériel de transport,Opening Balance,"1,49,209",,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Gross Block,Fixed Assets - Tangible,Gross Block
+01/04/22,21830000,Matériel de bureau,Opening Balance,"1,76,518",,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Gross Block,Fixed Assets - Tangible,Gross Block
+01/04/22,21840000,Mobilier,Opening Balance,926.4,,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Gross Block,Fixed Assets - Tangible,Gross Block
+01/04/22,27500000,Dépôts et cautionnements,Opening Balance,"20,601",,1410-10010,Deposits,CA,deposits,deposits-customer,Deposits,Deposits-Customer
+01/04/22,27510000,Dépots,Opening Balance,"7,000",,1410-10010,Deposits,CA,deposits,deposits-customer,Deposits,Deposits-Customer
+01/04/22,28050000,Amortis. concess. & droits simil.,Opening Balance,,"10,35,795",1650-10000,Fixed Assets - Intangible,NCA,Fixed Assets - Intangible,Intangible_Acc_Dep,Fixed Assets - Intangible,Intangible_Acc_Dep
+01/04/22,28181000,"Amortis. instal. gales, agenct. div",Opening Balance,,"1,763",1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Acc_Dep,Fixed Assets - Tangible,Acc_Dep
+01/04/22,28182000,Amortis. matériel de transport,Opening Balance,,"88,457",1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Acc_Dep,Fixed Assets - Tangible,Acc_Dep
+01/04/22,28183000,Amortis. matér.bureau et informat.,Opening Balance,,"1,53,853",1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Acc_Dep,Fixed Assets - Tangible,Acc_Dep
+01/04/22,28184000,Amortis. mobilier,Opening Balance,,147.71,1600-10000,Fixed Assets - Tangible,NCA,Fixed Assets - Tangible,Acc_Dep,Fixed Assets - Tangible,Acc_Dep
+01/04/22,40100000,Fournisseurs,Opening Balance,,"13,22,219",2100-10000,Trade and other payables,CL,trade and other payables,trade and other payables,Trade and other payables,Trade and other payables
+01/04/22,40810000,Fournisseurs - fact. non parvenues,Opening Balance,,"1,38,674",2100-10020,Accrued Expenses,CL,accrued expenses,other accruals,Accrued Expenses,Other Accruals
+01/04/22,41100000,Clients FRANCE,Opening Balance,"7,57,775",,1300-10000,Trade and other receivables,CA,trade and other receivables,trade and other receivables,Trade and other receivables,Trade and other receivables
+01/04/22,41110000,Clients UE,Opening Balance,"27,566",,1300-10000,Trade and other receivables,CA,trade and other receivables,trade and other receivables,Trade and other receivables,Trade and other receivables
+01/04/22,41130000,"CLIENTS 8,50%",Opening Balance,0,,1300-10000,Trade and other receivables,CA,trade and other receivables,trade and other receivables,Trade and other receivables,Trade and other receivables
+01/04/22,41190000,Clients RDM,Opening Balance,"8,31,378",,1300-10000,Trade and other receivables,CA,trade and other receivables,trade and other receivables,Trade and other receivables,Trade and other receivables
+01/04/22,41810000,Clients - factures à établir,Opening Balance,"21,67,820",,1310-10000,UnBilled Revenue,CA,unbilled revenue,unbilled revenue,UnBilled Revenue,UnBilled Revenue
+01/04/22,41810001,FAE MOZARK,Opening Balance,0,,2300-10000,Inter_Company receivables,CL,inter_company receivables,inter-company [singapore-phil],Inter_Company receivables,Inter-Company [Singapore-Phil]
+01/04/22,42100000,Personnel - rémunérations dues,Opening Balance,0,,2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,42120000,Notes de frais,Opening Balance,,"6,880",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,42121000,AVANCES DE FRAIS PERMANENTES,Opening Balance,"4,400",,2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,42500000,Personnel - avances et acomptes,Opening Balance,0,,2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,42820000,Dettes provis. pr Cp et Rtt,Opening Balance,,"56,397",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,42870000,Personnel - produits à recevoir,Opening Balance,"1,788",,2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43100000,Urssaf,Opening Balance,,"25,263",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43720000,Apgis,Opening Balance,,"11,046",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43721000,Prévoyance Ag2r Reunica,Opening Balance,,"3,572",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43730000,Retraite Humanis,Opening Balance,,"6,147",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43780000,Autres caisses,Opening Balance,,549.06,2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43820000,Charges sociales s/Cp et Rtt,Opening Balance,,"22,675",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,Advance to Employee
+01/04/22,43870000,Charges sociales - produits à recev,Opening Balance,"8,183",,1340-10000,Other Current Assets,CA,other current assets,Advance to Employee,Other current assets,Advance to Employee
+01/04/22,44210000,Prelevement de la source,Opening Balance,,"4,611",2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44400000,Etat - impôts sur les bénéfices,Opening Balance,"35,735",,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44526000,Tva autoliquidee,Opening Balance,1619.33,,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44527000,Tva autoliquidee,Opening Balance,,1619.33,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44551000,Tva à décaisser,Opening Balance,,"42,881",2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44562000,Tva déductible s/immobilisations,Opening Balance,0,,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44566000,Tva déductible s/aut.biens et sces,Opening Balance,"1,09,710",,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44567000,Crédit de tva à reporter,Opening Balance,0,,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44571000,Tva collectée,Opening Balance,,,2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44571200,Tva collectée ventes 20%,Opening Balance,,"1,26,296",2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44571300,"TVA COLLECTEE 8,5%",Opening Balance,0,,2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44586000,Tva sur factures non parvenues,Opening Balance,6335.37,,1340-10000,Other Current Assets,CA,other current assets,GST Payable,Other current assets,GST Payable
+01/04/22,44587000,Tva sur factures à établir,Opening Balance,,59601.37,2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44860000,Etat - autres charges à payer (FPC),Opening Balance,,49.03,2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44861000,Provision taxe apprentissage,Opening Balance,,176.39,2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44862000,provision CVAE,Opening Balance,,"1,946",2110-10000,Other Current liabilities,CL,other current liabilities,GST Payable,Other Current liabilities,GST Payable
+01/04/22,44866000,Tvs,Opening Balance,,"1,287",2110-10000,Other Current liabilities,CL,other current liabilities,Advance to Employee,Other Current liabilities,GST Payable
+01/04/22,45700000,Associés - dividendes à payer,Opening Balance,,361,2110-10000,Other Current liabilities,CL,other current liabilities,Prepaid Expense,Other Current liabilities,GST Payable
+01/04/22,46700000,Factor - compte courant,Opening Balance,"5,26,618",,2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,46710000,Factor - compte de garantie,Opening Balance,"58,751",,2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,46790000,Factor - financement factures,Opening Balance,,"5,87,506",2130-10000,Borrowings_Banks,CL,borrowings_banks,short term borrowings,Borrowings_Banks,Short term borrowings
+01/04/22,47100000,Compte général d'attente,Opening Balance,0,,1340-10000,Other Current Assets,CA,other current assets,advance to employee,Other current assets,Advance to Employee
+01/04/22,48600000,Charges constatées d'avance,Opening Balance,"30,391",,1410-10000,Short Term Loans and Advances,CA,short term loans and advances,prepaid expense,Short term loans and advances,Prepaid Expense
+01/04/22,48700000,Produits constatés d'avance,Opening Balance,,"3,30,950",1310-10000,UnBilled Revenue,CA,unbilled revenue,unbilled revenue,UnBilled Revenue,UnBilled Revenue
+01/04/22,51210000,Bred Qosi n°319.03.9912,Opening Balance,"30,498",,1100-10000,Cash & Cash Equivalents,CA,cash & cash equivalents,cash & cash equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,51220000,Bred Qosi Réseaux n°317.06.8265,Opening Balance,2826,,1100-10000,Cash & Cash Equivalents,CA,cash & cash equivalents,cash & cash equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,51230000,Société Générale,Opening Balance,"67,089",,1100-10000,Cash & Cash Equivalents,CA,cash & cash equivalents,cash & cash equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,58000000,Virements internes,Opening Balance,0,,1100-10000,Cash & Cash Equivalents,CA,cash & cash equivalents,cash & cash equivalents,Cash & Cash Equivalents,Cash & Cash Equivalents
+01/04/22,60400000,Prestations diverses (cos),Opening Balance,,,5100-10000,Cost of Sales (Platform),PL,cost of sales (platform),vendor cost,Cost of Sales,Labour
+01/04/22,60400002,Etudes Médiamétrie,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,60401001,Consultants techniques (fg),Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,60401991,R ET D,Opening Balance,,,5800-10000,R&D Expenses,PL,r&d expenses,r&d expenses,R&D Expenses,R&D Expenses
+01/04/22,60403000,Prestations diverses hors ue (cos),Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,60410000,Prestations diverses ue (cos),Opening Balance,,,5100-10000,Cost of Sales (Platform),PL,cost of sales (platform),vendor cost,Cost of Sales,Labour
+01/04/22,60610000,Achat fournitures non stockables,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,60611000,Electricite,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,60614000,Carburant,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,60630000,Achat petit equipement,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,60640000,Fournitures administratives,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61100001,Consultants non techniques (fg),Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,61194000,Sous-traitance hors cee,Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,61300001,Locations divers,Opening Balance,,,5100-10000,Cost of Sales (Platform),PL,cost of sales (platform),vendor cost,Cost of Sales,Labour
+01/04/22,61311000,Locations immobilieres,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61350000,Locations vehicules (cos),Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,61350001,Autres locations (fg),Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61352000,Locations de matériel de transport,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61400000,Charges locatives (immobilier),Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61500000,Entretien et reparations,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61520000,Entretien immobilier,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61550000,Entretien sur biens mobiliers,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61551000,Entretien du matériel technique,Opening Balance,,,5100-10000,Cost of Sales (Platform),PL,cost of sales (platform),vendor cost,Cost of Sales,Labour
+01/04/22,61552000,Entretien du matériel de transport,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,61553000,Entretien du matériel de bureau,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61560000,Maintenance,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61600000,Primes assurance,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61630000,Assurance matériel de transport,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,61810000,Documentation générale,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62100000,Personnel exterieur,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,62210000,Commissions et courtages sur achats,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62220000,Commissions et courtages sur ventes,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62230000,Honoraires juridiques,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62250000,Rémunérations d'affacturage,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62260000,Honoraires administratifs,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62270000,Frais d'actes et contentieux,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62300000,Publicite rp,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62330000,Foires et expositions,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62340000,Cadeaux à la clientèle,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62360000,Catalogues et imprimés,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62410000,Transports sur achats,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62420000,Transports sur ventes,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62480000,Transports divers,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62500000,"V&d, missions, receptions",Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62510000,V&d ** ne plus utiliser **,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62520000,Parking et peages,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62540000,Hotels,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62570000,Réceptions,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62600000,Affranchissements,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62600001,Autres frais postaux,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62620000,Abonnements telephonie,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62623000,ONE PROVIDER ONECLOUDPLAN,Opening Balance,,,5100-10020,Cost of Sales (Services),PL,cost of sales (services),vendor cost,Cost of Sales,Labour
+01/04/22,62630000,Frais internet+Cloud+ ser logiciels,Opening Balance,,,5100-10000,Cost of Sales (Platform),PL,cost of sales (platform),vendor cost,Cost of Sales,Labour
+01/04/22,62700000,Services bancaires,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62750000,Frais sur effets,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62780000,Prestations de services bancaires,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62800000,Divers,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,62810000,Cotisations,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,63100000,Impots et taxes,Opening Balance,,,6200-10000,Taxed,PL,taxed,tax expenses,Taxed,Tax Expenses
+01/04/22,63330000,Formation continue,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,63351000,Taxe apprentissage,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,63511000,Contribut° économique territoriale,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,63512000,Taxes foncières,Opening Balance,,,6200-10000,Taxed,PL,taxed,tax expenses,Taxed,Tax Expenses
+01/04/22,63513000,Autres impôts locaux,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,63514000,Taxes sur les véhicules sociétés,Opening Balance,,,6200-10000,Taxed,PL,taxed,tax expenses,Taxed,Tax Expenses
+01/04/22,63540000,Vignettes automobiles,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,64110000,Salaires et appointements,Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,64110991,DIRECT COMPENSATION,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64110992,INDIRECT COMPENSATION,Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,64110993,INDIRECT COMPENSATION STRUCTURE,Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,64112000,Primes,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64120000,Conges payes,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64140000,Indemnités et avantages divers,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64141000,Indemnites de rupture,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64170000,Avantages en nature,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64510000,Cotisations a l'urssaf,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64510991,DIRECT COMPENSATION CHARGES,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64510992,INDIRECT COMPENSATION CHARGES,Opening Balance,,,5700-10000,Indirect Compensation,PL,indirect compensation,other operating expenses,Indirect Compensation,Other Operating Expenses
+01/04/22,64520000,Mutuelle de sante,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64521000,Prevoyance,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64530000,Cotisations aux caisses de retraite,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64550000,Charges sur cp provisionne,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64580000,Cotisations autres organism. socx,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64581000,Tickets restaurant,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64700000,Autres charges sociales,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,64750000,Medecine du travail,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,64800000,Autres charges de personnel,Opening Balance,,,5200-10020,Direct Compensation (Services),PL,direct compensation (services),direct salaries,Direct Compensation,Direct Salaries
+01/04/22,65100000,"Redevances pour brevets, licences",Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,65100940,Droits utilisation MOZARK,Opening Balance,,,5910-10020,Inter_Company billing to affliate,PL,Inter_Company billing to affliate,France,Inter_Company billing to affliate,France
+01/04/22,65800000,Charges diverses gestion courante,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,66100000,Charges d'intérêts,Opening Balance,,,6100-10000,Finance Cost,PL,finance cost,interest expenses / tds interest,Finance Cost,Interest Expenses / TDS Interest
+01/04/22,66110000,Intérêts des emprunts et dettes,Opening Balance,,,6100-10000,Finance Cost,PL,finance cost,interest expenses / tds interest,Finance Cost,Interest Expenses / TDS Interest
+01/04/22,66116000,Intérêts emprunts + dettes PGE BRED,Opening Balance,,,6100-10000,Finance Cost,PL,finance cost,interest expenses / tds interest,Finance Cost,Interest Expenses / TDS Interest
+01/04/22,66600000,Pertes de change,Opening Balance,,,6100-10000,Finance Cost,PL,finance cost,interest expenses / tds interest,Finance Cost,Interest Expenses / TDS Interest
+01/04/22,67120000,Pénalités et amendes,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,67200000,Charges sur exercices antérieurs,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,67500000,Valeurs compt. éléments actif cédés,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,67800000,Autres charges exceptionnelles,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,67880000,Charges exceptionnelles diverses,Opening Balance,,,5300-10000,Other Expenses,PL,other expenses,other operating expenses,Other Expenses,Other Operating Expenses
+01/04/22,68111000,Dot. amort. s/immobil. incorporel.,Opening Balance,,,6000-10000,Depreciation/Amortization,PL,depreciation/amortization,depreciation/amortization,Depreciation/Amortization,Depreciation/Amortization
+01/04/22,68112000,Dot. amort. s/immobil. corporel.,Opening Balance,,,6000-10000,Depreciation/Amortization,PL,depreciation/amortization,depreciation/amortization,Depreciation/Amortization,Depreciation/Amortization
+01/04/22,69500000,Impôts sur les bénéfices,Opening Balance,,,6200-10000,Taxed,PL,taxed,tax expenses,Taxed,Tax Expenses
+01/04/22,70600000,Activité  services,Opening Balance,,,4100-10000,Revenue,PL,revenue,revenue,Revenue,Revenue
+01/04/22,70601000,Prestations Intracoms,Opening Balance,,,4100-10000,Revenue,PL,revenue,revenue,Revenue,Revenue
+01/04/22,70605000,Ventes presta 8.5%,Opening Balance,,,4100-10000,Revenue,PL,revenue,revenue,Revenue,Revenue
+01/04/22,70690000,Prestations de services (export),Opening Balance,,,4100-10000,Revenue,PL,revenue,revenue,Revenue,Revenue
+01/04/22,70691000,Prestations de services MOZARK,Opening Balance,,,5900-10020,Inter_Company billing from affliate,PL,Inter_Company billing from affliate,France,Inter_Company billing from affliate,France
+01/04/22,70692000,Prestations de services (intracom),Opening Balance,,,4100-10000,Revenue,PL,revenue,revenue,Revenue,Revenue
+01/04/22,75800000,Produits divers gestion courante,Opening Balance,,,4300-10000,Other Income,PL,other income,other income,Other Income,
+01/04/22,76600000,Gains de change,Opening Balance,,,6100-10000,Finance Cost,PL,finance cost,interest expenses / tds interest,Finance Cost,Interest Expenses / TDS Interest
+01/04/22,77520000,Prod cessions actifs - immo corp,Opening Balance,,,4300-10000,Other Income,PL,other income,other income,Other Income,
+01/04/22,79100000,Transfert de charges d'exploitation,Opening Balance,,,4300-10000,Other Income,PL,other income,other income,Other Income,Other Operating Expenses
