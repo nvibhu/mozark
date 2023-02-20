@@ -3,18 +3,13 @@ import numpy as np
 from datetime import datetime, timedelta
 
 import getParser
+import getParameter
 
 def getMasterAll(file_dir):
     print(f' [INFO] [Master_All]: Getting files from dir - {file_dir}/Master/')
 
-    list_country = ['MY', 'SGP', 'PH', 'IN', 'FR']
-    currency_all = {
-        'MY': 4.2,
-        'SGP': 1.35,
-        'PH': 51.6,
-        'IN': 78,
-        'FR': 0.9
-    }
+    list_country = getParameter.list_country
+    currency_all = getParameter.currency_all
     frames = []
     for country in list_country:
         df_gl = pd.read_csv(getParser.getMasterFile(file_dir, country), encoding = 'latin1')
