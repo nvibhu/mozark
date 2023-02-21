@@ -32,12 +32,12 @@ if __name__ == '__main__':
         #print("Defaulting to /mozark")
         #file_dir=''
 
-    # master_my = getMasterMY(file_dir, 'MY', last_date)
-    # master_sgp = getMasterSGP(file_dir, 'SGP', last_date)
-    # master_fr = getMasterFR(file_dir, 'FR', last_date)
-    # master_ph = getMasterPH(file_dir, 'PH', last_date)
-    # master_in = getMasterIN(file_dir, 'IN', last_date)
-    # master_all = getMasterAll(file_dir)
+    master_my = getMasterMY(file_dir, 'MY', last_date)
+    master_sgp = getMasterSGP(file_dir, 'SGP', last_date)
+    master_fr = getMasterFR(file_dir, 'FR', last_date)
+    master_ph = getMasterPH(file_dir, 'PH', last_date)
+    master_in = getMasterIN(file_dir, 'IN', last_date)
+    master_all = getMasterAll(file_dir)
     output_sf_chrono_segment = getSFChronoSegmentCombined(file_dir, 'All', last_date)
     output_sf_cos = getCostOfSales(file_dir, 'All', last_date)
 
