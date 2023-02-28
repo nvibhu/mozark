@@ -7,14 +7,15 @@ import getParameter
 
 def getCostOfSales(file_dir, country_code, last_date):
     
-    report_type = 'Quarter' #'Month No'
+    print(f' [INFO] [COS]: Generating COS report - {getParser.getOpeningTBFile(file_dir, country_code)}')
 
+    report_type = 'Quarter' #'Month No'
     df_sf_report = pd.read_csv(getParser.getSFChronoSegmentFile(file_dir, country_code), encoding = 'latin1')
     df_sf_report['Date'] =  pd.to_datetime(df_sf_report['Date'])
     #df_sf_report['Close Date'] =  pd.to_datetime(df_sf_report['Close Date'])
     df_sf_report['Invoice Date'] =  pd.to_datetime(df_sf_report['Invoice Date'])
     df_sf_report['Revenue_Quarter'] = df_sf_report.groupby(['Account Name: Region', report_type])['Net Revenue'].transform('sum')
-    print(df_sf_report['Date'].count())
+    # print(df_sf_report['Date'].count())
     df_sf_report.head()
 
 
@@ -24,13 +25,15 @@ def getCostOfSales(file_dir, country_code, last_date):
     for country in list_country:
         currency = currency_all[country]
         #print(currency)
-        df_gl = pd.read_csv(getParser.getMasterFile(file_dir, country_code), encoding = 'latin1')
+        df_gl = pd.read_csv(getParser.getMasterFile(file_dir, country), encoding = 'latin1')
         df_gl.insert(len(df_gl.axes[1]), 'Country', country, True)
         df_gl.insert(len(df_gl.axes[1]), 'Currency', currency, True)
-        df_gl['Currency'] = df_gl['Currency'].astype(float)
         frames.append(df_gl)
         
     df_gl_sgp = pd.concat(frames)
+    # print(df_gl_sgp.columns)
+    # df_gl_sgp.reset_index(drop=True, inplace=True)
+    df_gl_sgp['Currency'] = df_gl_sgp['Currency'].astype(float)
     df_gl_sgp['Date'] =  pd.to_datetime(df_gl_sgp['Date'])
     df_gl_sgp['Month No'] = df_gl_sgp['Date'].dt.month
     # create a list of our conditions based on month no
@@ -54,11 +57,17 @@ def getCostOfSales(file_dir, country_code, last_date):
     # df_gl_sgp['Amount'] = df_gl_sgp['Credit_Amount'] - df_gl_sgp['Debit_Amount']
     # df_gl_sgp['Cost_Of_Sales'] = np.where(df_gl_sgp['Amount'] < 0, df_gl_sgp['Amount'], 0)
 
+
+
     df_gl_sgp['Debit_Amount'] = df_gl_sgp.groupby(['Salesforce', report_type])['Opening_Debit'].transform('sum')
     df_gl_sgp['Credit_Amount'] = df_gl_sgp.groupby(['Salesforce', report_type])['Opening_Credit'].transform('sum')
+    # check the datatype
+    # print(df_gl_sgp['Credit_Amount'].dtypes)
+    # print(df_gl_sgp['Debit_Amount'].dtypes)
+    # print(df_gl_sgp['Currency'].dtypes)
     df_gl_sgp['Amount'] = (df_gl_sgp['Credit_Amount'] - df_gl_sgp['Debit_Amount']) / df_gl_sgp['Currency']
     df_gl_sgp['Cost_Of_Sales'] = np.where(df_gl_sgp['Amount'] < 0, df_gl_sgp['Amount'], 0)
-    print(df_gl_sgp['Date'].count())
+    # print(df_gl_sgp['Date'].count())
 
     # Merge sf report with gl report
     df_sf_report_ = df_sf_report[['Account Name: Account Name', 'Account Name: Region', report_type]].copy()
@@ -70,7 +79,7 @@ def getCostOfSales(file_dir, country_code, last_date):
     #print(df_cos_without_revenue.columns)
     df_cos_without_revenue['COS_Without_Revenue'] = df_cos_without_revenue['COS_Without_Revenue'].fillna('Not Available')
     df_cos_without_revenue.to_csv(getParser.getCOSWithoutRevenueFile(file_dir, country_code), mode='w', sep=',', encoding='utf-8', index=False)
-    print(df_cos_without_revenue['Date'].count())
+    # print(df_cos_without_revenue['Date'].count())
 
 
 
@@ -110,7 +119,7 @@ def getCostOfSales(file_dir, country_code, last_date):
     df_gl_sgp['Amount'] = (df_gl_sgp['Credit_Amount'] - df_gl_sgp['Debit_Amount']) / df_gl_sgp['Currency']
     df_gl_sgp['Cost_Of_Sales_Quarter'] = np.where(df_gl_sgp['Amount'] < 0, df_gl_sgp['Amount'], 0)
     df_gl_sgp.insert(len(df_gl_sgp.axes[1]), 'Account Name: Region', 'Europe', True)
-    print(df_gl_sgp['Date'].count())
+    # print(df_gl_sgp['Date'].count())
 
     df_gl_sgp.drop_duplicates(subset=['Account Name: Region', report_type], keep='first', inplace=True)
     df_final_data_ = pd.merge(df_final_data, df_gl_sgp[['Account Name: Region', 'Cost_Of_Sales_Quarter', report_type]],\
@@ -125,7 +134,7 @@ def getCostOfSales(file_dir, country_code, last_date):
     #df_final_data_ = df_final_data_.replace(r'\n',' ', regex=True) 
     df_final_data_.replace(to_replace=[r"\\t|\\n|\\r", "\t|\n|\r"], value=["",""], regex=True, inplace=True)
     df_final_data_.to_csv(getParser.getSFCOSFile(file_dir, country_code, report_type), mode='w', sep=',', encoding='utf-8', index=False)
-    print(df_final_data_['Date_x'].count())
+    # print(df_final_data_['Date_x'].count())
 
 
     # cost greater than revenue
