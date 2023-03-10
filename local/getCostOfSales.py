@@ -59,8 +59,8 @@ def getCostOfSales(file_dir, country_code, last_date):
 
 
 
-    df_gl_sgp['Debit_Amount'] = df_gl_sgp.groupby(['Salesforce', report_type])['Opening_Debit'].transform('sum')
-    df_gl_sgp['Credit_Amount'] = df_gl_sgp.groupby(['Salesforce', report_type])['Opening_Credit'].transform('sum')
+    df_gl_sgp['Debit_Amount'] = df_gl_sgp.groupby(['Sales force', report_type])['Opening_Debit'].transform('sum')
+    df_gl_sgp['Credit_Amount'] = df_gl_sgp.groupby(['Sales force', report_type])['Opening_Credit'].transform('sum')
     # check the datatype
     # print(df_gl_sgp['Credit_Amount'].dtypes)
     # print(df_gl_sgp['Debit_Amount'].dtypes)
@@ -73,7 +73,7 @@ def getCostOfSales(file_dir, country_code, last_date):
     df_sf_report_ = df_sf_report[['Account Name: Account Name', 'Account Name: Region', report_type]].copy()
     df_sf_report_.drop_duplicates(subset=['Account Name: Account Name', report_type], keep='first', inplace=True)
     df_cos_without_revenue = pd.merge(df_gl_sgp, df_sf_report_, how='left', \
-                            left_on=['Salesforce', report_type], right_on=['Account Name: Account Name', report_type])
+                            left_on=['Sales force', report_type], right_on=['Account Name: Account Name', report_type])
     #print(df_cos_without_revenue.columns)
     df_cos_without_revenue.rename(columns = {'Account Name: Account Name':'COS_Without_Revenue'}, inplace = True)
     #print(df_cos_without_revenue.columns)
@@ -84,9 +84,9 @@ def getCostOfSales(file_dir, country_code, last_date):
 
 
     # Merge sf report with gl report
-    df_gl_sgp.drop_duplicates(subset=['Salesforce', report_type], keep='first', inplace=True)
+    df_gl_sgp.drop_duplicates(subset=['Sales force', report_type], keep='first', inplace=True)
     df_final_data = pd.merge(df_sf_report, df_gl_sgp, how='left', \
-                            left_on=['Account Name: Account Name', report_type], right_on=['Salesforce', report_type])
+                            left_on=['Account Name: Account Name', report_type], right_on=['Sales force', report_type])
 
 
     # Process France Data
