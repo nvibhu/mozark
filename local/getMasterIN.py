@@ -134,10 +134,10 @@ def getMasterIN(file_dir, country_code, last_date):
     df_final_.insert(len(df_final_.axes[1]), 'Customer Name', '', True)
     df_final_.insert(len(df_final_.axes[1]), 'Sales force', '', True)
     for row_index, row in df_customer.iterrows():
-        df_final_filtered = df_final_[df_final_['Account'].str.contains(row['Customer Names'], case=False, na=False)]
+        df_final_filtered = df_final_[df_final_['Account'].str.contains(row['Customer Name'], case=False, na=False)]
         if (len(df_final_filtered) > 0):
             for row_index_, row_ in df_final_filtered.iterrows():
-                df_final_.loc[row_index_, 'Customer Name'] = row['Customer Names']
+                df_final_.loc[row_index_, 'Customer Name'] = row['Customer Name']
                 df_final_.loc[row_index_, 'Sales force'] = row['Sales force']
             
     df_final_.to_csv(getParser.getMasterFile(file_dir, country_code), mode='w', sep=',', encoding='utf-8', index=False)    
