@@ -13,7 +13,7 @@ def getMasterFR(file_dir, country_code, last_date):
                                     'ACCT CODE':'Account No', 'Débit':'Debit Amount', 'Crédit':'Credit Amount',
                                     'Lettr.':'Lettr'}, inplace = True)
 
-    print(df_transaction.columns)
+    #print(df_transaction.columns)
     #df_transaction['Date'] = df_transaction['Date'].astype(str)
     df_transaction['Date'] =  pd.to_datetime(df_transaction['Date']) #format='%d%m%y'
     #df_transaction['Debit Amount'] = df_transaction['Debit Amount'].str.replace('RM','').str.replace('S','').str.replace('$','').str.replace('U','').str.replace('E','').str.replace('R','').str.replace(',','')

@@ -135,7 +135,7 @@ def getCostOfSales(file_dir, country_code, last_date):
     df_final_data_.replace(to_replace=[r"\\t|\\n|\\r", "\t|\n|\r"], value=["",""], regex=True, inplace=True)
     df_final_data_.to_csv(getParser.getSFCOSFile(file_dir, country_code, report_type), mode='w', sep=',', encoding='utf-8', index=False)
     # print(df_final_data_['Date_x'].count())
-
+    
 
     # cost greater than revenue
     df_cost_greater_than_revenue = df_final_data_[df_final_data_['Gross_Margin'] < 0]

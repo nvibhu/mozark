@@ -20,6 +20,7 @@ from getMasterIN import getMasterIN
 from getMasterAll import getMasterAll
 from getSFChronoSegmentCombined import getSFChronoSegmentCombined
 from getCostOfSales import getCostOfSales
+from getGraphMarginReport import getGraphMarginReport
 
 if __name__ == '__main__':
     print ("[INFO]: Mozark Financial Report")
@@ -40,6 +41,7 @@ if __name__ == '__main__':
     master_all = getMasterAll(file_dir)
     output_sf_chrono_segment = getSFChronoSegmentCombined(file_dir, 'All', last_date)
     output_sf_cos = getCostOfSales(file_dir, 'All', last_date)
+    graph_margin_report = getGraphMarginReport(file_dir, 'All', 'Quarter')
 
 
     # # Apply parallel processing for all the files

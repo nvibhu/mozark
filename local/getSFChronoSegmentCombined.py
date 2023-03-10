@@ -5,11 +5,13 @@ from datetime import datetime, timedelta
 import getParser
 
 def getSFChronoSegmentCombined(file_dir, country_code, last_date):
+
+    print(f' [INFO] [Chrono]: Generating combined SF Chrono Segment report ')
     
     df_sf_complete_report = pd.read_csv(getParser.getSFChronoFile(file_dir, country_code), encoding = 'latin1')
     df_sf_complete_report['Date'] =  pd.to_datetime(df_sf_complete_report['Date'])
     df_sf_complete_report.head()
-    print(df_sf_complete_report['Date'].count())
+    #print(df_sf_complete_report['Date'].count())
 
     df_sf_segment_report = pd.read_csv(getParser.getSFSegmentFile(file_dir, country_code), encoding = 'latin1')
     df_sf_segment_report.head()
@@ -49,5 +51,5 @@ def getSFChronoSegmentCombined(file_dir, country_code, last_date):
     # create a new column and use np.select to assign values to it using our lists as arguments
     df_sf_merged['Quarter'] = np.select(quarter_conditions, quarter_values)
     df_sf_merged.to_csv(getParser.getSFChronoSegmentFile(file_dir, country_code), mode='w', sep=',', encoding='latin1', index=False)
-    print(df_sf_merged['Date'].count())
+    #print(df_sf_merged['Date'].count())
     df_sf_merged.head()

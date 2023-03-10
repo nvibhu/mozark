@@ -58,3 +58,8 @@ def getSFCOSFile(file_dir, country_code, report_type):
     file_path = file_dir+'/Output/SF_COS_'+report_type+'.csv'
     #print(file_path)
     return file_path
+
+def getGraphMarginReportFile(file_dir, country_code, report_type):
+    file_path = file_dir+'/Output/Graph_Margin_Report_'+report_type+'.csv'
+    #print(file_path)
+    return file_path
